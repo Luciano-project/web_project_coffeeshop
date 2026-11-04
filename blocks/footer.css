@@ -1,11 +1,21 @@
 .footer {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
   padding: 60px 80px;
-  background: radial-gradient(
-    circle at 123px 39px,
-    #2f80ed 172px,
-    #0a2850 172px
-  );
+  background-color: #0a2850;
   color: #ffffff;
+}
+
+.footer__circle {
+  position: absolute;
+  z-index: -1;
+  top: -133px;
+  left: -49px;
+  width: 344px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #2f80ed;
 }
 
 .footer__content {
